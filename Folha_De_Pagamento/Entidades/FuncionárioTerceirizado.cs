@@ -1,16 +1,16 @@
 ﻿namespace Course.Entities
 {
     //Ele está herdando as informações que vem da classe Empregado
-    class FuncionárioTerceirizado : Empregado
+    class FuncionarioTerceirizado : Empregado
     {
         //Declarações da variável e uso do encapsulamento
         public double CobrancaAdicional { get; set; }
         //Construtor padrão 
-        public FuncionárioTerceirizado()
+        public FuncionarioTerceirizado()
         {
         }
         //Criação do construtor
-        public FuncionárioTerceirizado(string nome, int horas, double valorPorHoras, double cobrancaAdicional)
+        public FuncionarioTerceirizado(string nome, int horas, double valorPorHoras, double cobrancaAdicional)
             : base(nome, horas, valorPorHoras)
         {
             CobrancaAdicional = cobrancaAdicional;

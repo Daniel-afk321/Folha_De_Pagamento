@@ -39,7 +39,7 @@ namespace Course
                     Console.Write("Adicional Despesas: ");
                     double cobrancaAdicional = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
                     //Vai adicionar o FuncionárioTerceirizado na lista 
-                    list.Add(new FuncionárioTerceirizado(nome, horas, ValorPorHoras, cobrancaAdicional));
+                    list.Add(new FuncionarioTerceirizado(nome, horas, ValorPorHoras, cobrancaAdicional));
                 }
                 else
                 {
@@ -52,9 +52,9 @@ namespace Course
             //Pagamentos 
             Console.WriteLine("Pagamentos:");
             //Vai Imprimir os valores da lista pro usuário
-            foreach (Empregado funcionário in list)
+            foreach (Empregado funcionario in list)
             {
-                Console.WriteLine(funcionário.Nome + " - $ " + funcionário.Pagamento().ToString("F2", CultureInfo.InvariantCulture));
+                Console.WriteLine(funcionario.Nome + " - $ " + funcionario.Pagamento().ToString("F2", CultureInfo.InvariantCulture));
             }
         }
     }
